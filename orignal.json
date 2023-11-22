@@ -1,0 +1,590 @@
+case1:
+{
+"title": "福建科鉴司法鉴定所对涉嫌非法经营罪相关服务器数据进行电子数据鉴定案",
+"casecategory": "电子数据鉴定",
+"caseBrief": "为了查明‘火力加速器非法经营案’对涉及到服务器数据、VPS代理服务器功能性进行鉴定。",
+"IdentificationProcess": [
+"使用工具有：电子数据取证工作站、Firefox浏览器、Hash、取证大师软件、云勘大师等",
+"对提供的服务器信息如IP、用户名、密码等进行连接并制作镜像",
+"分析镜像中的用户痕迹、文件并导出取证报告",
+"通过终端记录分析发现安装和配置了squid代理服务器软件",
+"在日志文件中发现对境外IP和网站如google、facebook等进行查询访问"
+],
+"Identification opinion": "服务器104.233.162.123涉及squid代理服务器配置和访问境外网站,其他两个服务器未发现相关信息。"
+}
+
+
+
+case2:
+{
+"title": "福建美亚明安信息科技有限公司司法鉴定所对肖某某被诈骗送检手机进行电子数据鉴定案",
+"casecategory": "电子数据鉴定",
+"caseBrief": "因肖某某被诈骗案,某公安机关委托鉴定。",
+"IdentificationProcess": [
+"对4部送检手机利用手机分析工作站和手机大师软件进行电子数据提取、恢复",
+"分析提取到的通讯录、通话记录、短信、图片视频、微信、支付宝等应用程序数据",
+"对其中一部手机中的微信群Excel文件进行去重统计"
+],
+"analytical specification":  "计算检出数据的SHA-1完整性校验值为04469E0D5F1FCB4855DC25C3B6D61BD4AAF30FCE",
+"indentification opinion": "分别提取4部手机中的各类数据,对比分析",
+"phoneData": [
+{
+"label": "黄某 052 工作机",
+"brand": "华为",
+"model": "NOH-AN01",
+"dataExtracted": "通讯录80条,通话记录147条,短信177条,图片3963张,视频181段"
+},
+{
+"label": "陈某某 131452 053",
+"brand": "HONOR",
+"model": "BMH-AN10",
+"dataExtracted": "通讯录36条,通话记录1124条,短信481条,图片1021张,视频13段"
+},
+{
+"label": "李某 生活机 054",
+"brand": "华为",
+"model": "NOH-AN00",
+"dataExtracted": "通讯录158条,通话记录2000条,短信854条,群聊Excel文件2280条"
+},
+{
+"label": "田某某 家用机 057",
+"brand": "苹果",
+"model": "iPhone X",
+"dataExtracted": "通讯录161条,通话记录210条,短信242条,图片368张,视频102段"
+}
+]
+}
+
+case3:
+{
+"title": "福建中证司法鉴定中心对A公司涉嫌传销案的鉴定",
+"caseNature": "电子数据鉴定",
+"caseBrief": "某工商局于2015年4月接举报称A公司涉嫌在某地区从事传销活动。",
+"identificationProcess": [
+"搭建系统重现A公司涉案服务器",
+"分析服务器等数据分析A公司系统中的会员类型、角色、规则等",
+"统计 A公司系统上的用户数据"
+],
+"analyticalSpecifications": "分析A公司开发的在线商城系统,设置的会员等级、报酬规则",
+"identificationOpinion": "用户数142957740个,一星会员2293026个,二星会员182175个等",
+"userData": [
+{
+"memberLevel": "一星用户",
+"memberCount": "2293026"
+},
+{
+"memberLevel": "二星用户",
+"memberCount": "182175"
+},
+{
+"memberLevel": "三星用户",
+"memberCount": "4227"
+},
+{
+"memberLevel": "四星用户",
+"memberCount": "1309"
+},
+{
+"memberLevel": "五星用户",
+"memberCount": "378"
+}
+]
+}
+
+case4:
+{
+"title": "福建中证司法鉴定中心对盗刷银行卡所涉取款机硬盘进行电子数据鉴定案",
+"casecategory": "电子数据鉴定",
+"caseBrief": "2019年06月26日08是02分许,某地公安局接到州局指挥中心110指令称被害人银行卡钱款被盗取走7000余元。",
+"identificationProcess": [
+"使用电子数据仿真取证系统对送检硬盘进行系统仿真运行",
+"检出读卡软件“CRT-310”和“AutoMachine.exe”",
+"检出包含被复制银行卡加密信息的文件63个",
+"检出并使用软件“DecryptTool.exe”解密银行卡加密信息"
+],
+"analyticalSpecifications": "分析监控软件和银行卡信息获取方式,还原盗卡整个流程",
+"identificationOpinion": "检出读卡软件、ATM界面软件、银行卡加密信息文件及解密软件"
+}
+
+case5:
+{
+"title": "福建中证司法鉴定中心对伪基站的电子数据鉴定案",
+"casecategory": "电子数据鉴定",
+"caseBrief": "2017年3月,某地公安局经工作发现在该市某密集广场有“伪基站”设备发射信号。",
+"identificationProcess": [
+"通过只读接口连接送检的介质中的硬盘,制作硬盘镜像文件",
+"对镜像文件进行系统仿真,检查“软件”桌面配置文件并运行程序",
+"分析软件以取得短信数据和IMSI",
+"通过数据恢复获取更多短信和IMSI数据"
+],
+"analyticalSpecifications": "分析伪基站软件与数据库,还原发送短信和授收IMSI的流程",
+"identificationOpinion": "在数据库文件中恢复202条短信记录,在软件中检出813210条IMSI,在硬盘中恢复282708条IMSI"
+}
+
+case6:
+{
+"title": "国家信息中心电子数据司法鉴定中对某平台传播淫秽物品牟利案件司法鉴定出庭作证",
+"casecategory": "电子数据鉴定",
+"caseBrief": "2016年1月7日、8日,深圳某公司及其CEO王某等4名高管被控传播淫秽物品牟利罪一案在法院开庭审理。",
+"identificationProcess": [
+"对4台服务器进行全面、细致的检验分析",
+"查找远程访问IP地址信息及注册信息",
+"检验qdata文件是否于某时间后从外部修改",
+"分析服务器对视频的处理功能"
+],
+"analyticalSpecifications": "分析系统日志、服务器存储数据以还原案情",
+"identificationOpinion": "IP地址信息、qdata文件时间未修改、服务器不足反映平台功能",
+"courtTestimony": "鉴定人应法庭要求对鉴定结果进行辩解与解释"
+}
+
+case7:
+{
+"title": "国家信息中心电子数据司法鉴定中心对“某国电信诈骗”案件的电子数据司法鉴定",
+"casecategory": "电子数据鉴定",
+"caseBrief": "2016年4月,某国警方成功打掉一个冒充中国大陆公检法机关,向大陆群众大肆实施电信诈骗的犯罪团伙。",
+"identificationProcess": [
+"制作送检硬盘的镜像文件",
+"系统仿真调出“软件”配置、运行程序",
+"提取重点文件并验证时间属性",
+"分析文件内容"
+],
+"analyticalSpecifications": "检验系统时间、验证文件时间不修改",
+"identificationOpinion": "word、excel、Skype文件时间均未在指定时间后修改",
+"courtTestimony": "不涉及",
+"AdmissibilityOfOpinions": "不提及"
+}
+
+case8:
+{
+"title": "国家信息中心电子数据司法鉴定中心对电子数据哈希校验值一致性进行司法鉴定案例",
+"casecategory": "电子数据鉴定",
+"caseBrief": "为了查明委托人保全在受托人存证系统的电子数据的哈希值同鉴定中心存证的校验值是否一致,进行电子数据司法鉴定。",
+"identificationProcess": [
+"将检材光盘编号并记录外观特征",
+"提取并计算检材光盘文件哈希值",
+"根据委托方提供信息提取文件数据并对比哈希值"
+],
+"analyticalSpecifications": "判断文件哈希值与鉴定中心记录是否一致",
+"identificationOpinion": "检材光盘文件哈希值与鉴定中心记录一致,数据在指定时间后未改变",
+"expertTestimony": "不涉及",
+"AdmissibilityOfOpinions": "不提及"
+}
+
+case9:
+{
+"title": "国家信息中心电子数据司法鉴定中心对录音剪辑进行痕迹鉴定案例",
+"casecategory": "电子数据鉴定",
+"caseBrief": "为了查明某公司债务案,对送检手机中文件的剪辑痕迹进行鉴定。",
+"identificationProcess": [
+"将检材编号并记录外观特征",
+"提取文件到检验工作站并计算哈希值",
+"进行图谱分析与听觉鉴别",
+"通过数据库解析与底层数据分析"
+],
+"analyticalSpecifications": "文件属性分析、图谱与听觉对比与数据库解析",
+"identificationOpinion": "指定通话、短信记录和微信记录中未发现剪辑修改痕迹",
+"courtTestimony": "不涉及",
+"AdmissibilityOfOpinions": "不提及"
+}
+
+case10:
+{
+"title": "国家信息中心电子数据司法鉴定中心对某地交警违规执法案件的电子数据司法鉴定",
+"casecategory": "电子数据鉴定",
+"caseBrief": "2016年2月7日,徐某驾驶机动车与董某发生交通事故,因事故双方对责任划分存在争议,赔偿问题协商无果,交由交警进行事故处理,并对徐某车上的行车记录仪进行扣押。",
+"identificationProcess": [
+"将检材编号并记录外观特征",
+"将检材存储卡制作成镜像文件",
+"对镜像文件进行系统恢复并解析",
+"进行深层数据恢复寻找删除文件"
+],
+"analyticalSpecifications": "检验系统时间、验证视频未发现增删",
+"identificationOpinion": "未发现指定时间后视频记录,两删除文件非完整记录",
+"indexDate": "2016年2月7日17时00分",
+"courtTestimony": "不涉及",
+"AdmissibilityOfOpinions": "不提及"
+}
+
+case11:
+{
+"title": "国家信息中心电子数据司法鉴定中心对某平台传播淫秽物品牟利案件的电子数据司法鉴定",
+"casecategory": "电子数据鉴定",
+"caseBrief": "2016年1月7日、8日,深圳某公司及其CEO王某等4名高管被控传播淫秽物品牟利罪一案在法院开庭审理。",
+"identificationProcess": [
+"将4台服务器编号并记录外观特征",
+"提取服务器日志分析IP地址",
+"分析qdata文件时间是否修改",
+"判断服务器作为该公司平台功能"
+],
+"analyticalSpecifications": "分析日志、文件以还原平台服务器角色",
+"identificationOpinion": [
+"IP地址相关信息见附件",
+"qdata文件时间未于指定时间后修改",
+"服务器不足判断平台功能"
+],
+"Appendices": "IP地址注册信息、qdata文件属性汇总表",
+"courtTestimony": "不涉及",
+"AdmissibilityOfOpinions": "不提及"
+}
+
+case12:
+{
+"title": "国家信息中心电子数据司法鉴定中心对某弑母案件的电子数据司法鉴定",
+"casecategory": "电子数据鉴定",
+"caseBrief": "2016年2月14日,警方在某地住处内发现了被害人谢某的尸体。经法医鉴定,被害人在2015年7月11日被杀,唯一的嫌疑人就是其儿子吴某。警方就嫌疑人使用的手机委托司法鉴定机构进行数据恢复司法鉴定。",
+"identificationProcess": [
+"将送检介质编号,并拍照记录其外观特征",
+"将受损手机拆开,使用超声波清洗仪清洗主板",
+"拆出手机存储芯片制作镜像文件,对镜像内容进行解析恢复,提取手机原始存储文件",
+"解析微信等应用的数据库文件,进行数据提取恢复"
+],
+"analyticalSpecifications": "获取手机存储芯片镜像并提取关键数据",
+"identificationOpinion": "给出数据恢复情况",
+"courtTestimony": "不涉及",
+"AdmissibilityOfOpinions": "不提及"
+}
+
+case13:
+{
+"title": "国家信息中心电子数据司法鉴定中心对敲诈勒索案件的鉴定案",
+"casecategory": "电子数据鉴定",
+"caseBrief": "为了查明李某某敲诈勒索案,根据《中华人民共和国刑事诉讼法》第一百四十六条之规定,对手机内数据进行鉴定。",
+"identificationProcess": [
+"将送检手机编号并记录外观特征",
+"提取手机镜像文件并计算哈希值",
+"使用UFED软件解析提取指定文件并生成报告"
+],
+"analyticalSpecifications": "提取手机聊天记录相关信息",
+"identificationOpinion": "共恢复出2389个QQ文件,897个微信文件",
+"courtTestimony": "不涉及",
+"AdmissibilityOfOpinions": "不涉及"
+}
+
+case14:
+{
+"title": "河南硕证电子数据司法鉴定所对疑似非法控制计算机信息系统程序进行电子数据鉴定案",
+"casecategory": "电子数据鉴定",
+"caseBrief": "绝地求生游戏外挂程序“全功能0224.zip”文件,为“2021.02.09潢川县QQ1287554418等提供侵入,非法控制计算机信息系统程序、工具案”一案所涉及的鉴定材料。",
+"identificationProcess": [
+"基础服务器环境",
+"分析alpha.vmp.exe应用程序的概况信息",
+"程序功能验证"
+],
+"analyticalSpecifications": "调查应用程序功能是否非法控制计算机",
+"identificationOpinion": "程序功能属于修改游戏应用,导致系统不稳定,属于非法控制计算机",
+"courtTestimony": "不涉及",
+"AdmissibilityOfOpinions": "不涉及"
+}
+
+case15:
+{
+"title": "湖北中新科维检验检测有限公司对涉嫌诈骗罪犯罪嫌疑人使用手机号码进行电子数据鉴定案",
+"casecategory": "电子数据鉴定",
+"caseBrief": "为了查明涉嫌诈骗案,对手机号码内数据进行鉴定。",
+"identificationProcess": [
+"将检材光盘编号并记录特征",
+"提取数据导入数据库统计",
+"对提取数据结果汇总表格"
+],
+"analyticalSpecifications": "提取并统计号码通讯记录",
+"identificationOpinion": "给出提取数据结果",
+"courtTestimony": "不涉及",
+"AdmissibilityOfOpinions": "不涉及"
+}
+
+case16:
+{
+"title": "江苏省扬州大学司法鉴定所对录像资料完整性进行电子数据鉴定案例",
+"casecategory": "电子数据鉴定",
+"caseBrief": "2018年X月X日X时X分左右,王XX驾驶苏HXXXX在淮安市淮阴区县道6KM+100M处发生道路交通事故。车上有行车记录仪一部,要求鉴定行车记录仪中记录的视频内容是否有剪辑修改行为。",
+"identificationProcess": [
+"1、检查检材材料,行车记录仪中SD卡已用14.5G,剩余134M空间,包含两个文件夹DCIM和REC,其中DCIM为空文件夹,",
+"REC中包含127个文件,其中包含49个TS视频文件,78个nmea文件。",
+"其中TS文件名为PPG02891-PPG02939,文件名连续,文件大小基本为381M左右,PPG02897,PPG02903,PPG02916,",
+"PPG02917,PPG02935,PPG02936,PPG02939 这7个文件均小于381M,文件创建日期均为2018年2月19日当天。"
+],
+"analytical specification": "对6个检材视频内容逐一仔细分析,除检材文件PPG02935.ts外的其它检材文件视频画面内容、画面噪点均连续,",
+"画面上显示的记录仪系统时间也连续,没有发生突变现象。但PPG02935.ts文件视频在第2431帧,画面系统时间由19:",
+"34:55跳转到22:46:15,时间相隔约3小时11分钟,画面内容也发生变化。",
+"identificationOpinion": "送检行车记录仪中SD卡内PPG02935.ts视频文件中后半段内容是拼接上去的,PPG02933.ts、PPG02934.ts、",
+"PPG02936.ts、PPG02937.ts、PPG02938.ts视频文件未发现剪辑修改痕迹。",
+"Appendices": "不涉及",
+"courtTestimony": "不涉及",
+"AdmissibilityOfOpinions": "不涉及"
+}
+
+case17:
+{
+"title": "上海辰星电子数据司法鉴定中心对电子数据固定保全和程序代码功能检验的司法鉴定案",
+"casecategory": "电子数据鉴定",
+"caseBrief": "据委托人介绍,2014年10月,委托人接“2345网站”报案称,其公司网站流量被劫持,造成公司巨大经济损失。现委托上海辰星电子数据司法鉴定中心对相关内容进行司法鉴定。",
+"identificationProcess": [
+"检验方法:此鉴定依据中华人民共和国公共安全行业标准GA/T 756-2008《数字化设备证据数据发现提取固定方法》和GA/T 828-2009《电子物证软件功能检验技术规范》进行检验。",
+"电子数据固定保全",
+"程序代码功能检验"
+],
+"analyticalSpecifications": "网站域名映射、电子数据提取与固定保全、程序代码功能分析验证",
+"identificationOpinion": "对检材进行了电子数据抽取固定保全,并对程序代码功能进行检验与验证",
+"Appendices": "不涉及",
+"courtTestimony": "不涉及",
+"AdmissibilityOfOpinions": "不涉及"
+}
+
+case18:
+{
+"title": "上海辰星电子数据司法鉴定中心对电子邮件真实性司法鉴定案",
+"casecategory": "电子数据鉴定",
+"caseBrief": "据委托人介绍,2013年12月16日,李某(公司Hr经理)涉嫌向全公司发送未经批准的,内容涉及辞退公司员工的电子邮件。目前就存在争议部分,委托上海辰星电子数据司法鉴定中心进行鉴定。",
+"identificationProcess": [
+"检验方法",
+"电子邮件真实性检验",
+"域账号唯一性检验",
+"DHCP服务器检验",
+"邮件服务器检验"
+],
+"analyticalSpecifications": "指定邮件分析、域账户属性、日志与IP解析、邮件数据提取与还原",
+"identificationOpinion": "发送方为“er@nblife.com”,发送时间为2013年12月16日下午5点11分,主题为“人力资源部通告-员工违纪辞退”的邮件由计算机名为“monica-li-nb”的机器发出。",
+"Appendices": "不涉及",
+"courtTestimony": "不涉及",
+"AdmissibilityOfOpinions": "不涉及"
+}
+
+case19:
+{
+"title": "上海辰星电子数据司法鉴定中心对数据库数据进行分析、固定的司法鉴定案",
+"casecategory": "电子数据鉴定",
+"caseBrief": "委托人通过侦查发现,自2016年8月起,****(上海)投资发展有限公司涉嫌非法吸收公众存款,现委托上海辰星电子数据司法鉴定中心对相关涉案数据进行司法鉴定。",
+"identificationProcess": [
+"检验方法",
+"电子数据固定保全",
+"数据库信息检验",
+"数据库数据查询与报表生成"
+],
+"analyticalSpecifications": "数据库备份文件恢复与解析、数据表结构与字段信息查询、业务数据查询报表生成",
+"identificationOpinion": "对检材中指定数据库进行了数据恢复与固定保全,并对数据库结构与数据内容进行了查询与报表生成",
+"Appendices": "不涉及",
+"courtTestimony": "不涉及",
+"AdmissibilityOfOpinions": "不涉及"
+}
+
+case20:
+{
+"title": "司法鉴定科学技术研究所司法鉴定中心鉴定人就民间借贷纠纷司法鉴定意见出庭作证",
+"casecategory": "电子数据鉴定",
+"caseBrief": "原告与被告公司具有长期业务往来关系,原告称其公司员工于2010年通过电子邮件方式将2008年的对账单发给被告公
+司,催促其付费。被告对这一情况不予认可,并要求对原告提交的电子邮件真实性进行鉴定。上海市某区人民法院收到鉴
+定申请后,委托司法鉴定科学技术研究所司法鉴定中心对原告提交的(1)账号为“@hotmail.com”的邮箱及邮箱所有
+者使用的ThinkPad笔记本电脑一台;(2)账号为“@china.com”的邮箱所有者使用的HP笔记本电脑一台进行鉴定,
+确定原告提交的公证书中时间为“2010/2/24”主题为的邮件是否为伪造、篡改形成。",
+"identificationProcess": [
+"接到出庭通知书,与法院确认相关事宜",
+"鉴定人出庭前的准备",
+"履行出庭作证义务"
+],
+"analyticalSpecifications": "对指定邮件进行分析鉴定与流程描述",
+"identificationOpinion": "未发现需检电子邮件经过伪造、篡改",
+"Appendices": "不涉及",
+"courtTestimony": " law court's requests on testifying the identification opinions in court",
+"AdmissibilityOfOpinions": "the court adopted the identification opinions of the identification institution and considered that the evidence is conclusive and the facts are clear"
+}
+
+case21:
+{
+"title": "司法鉴定科学研究院对计算机软件著作权侵权行为所涉电子数据进行司法鉴定案",
+"casecategory": "电子数据鉴定",
+"caseBrief": "D公司发现T公司未购买授权但正招聘相关人员,委托我院对T公司使用计算机中软件进行检查。",
+"identificationProcess": [
+"固定检材外观特征",
+"检查已安装程序和注册表项",
+"检查日志文件"
+],
+"analyticalSpecifications": "分析检材中软件相关信息",
+"identificationOpinion": "除两台外,其他检材均发现软件安装和使用信息",
+"Appendices": "不涉及",
+"courtTestimony": "不涉及",
+"AdmissibilityOfOpinions": "不涉及"
+}
+
+case22:
+{
+"title": "司法鉴定科学研究院对电子数据恢复的声像资料鉴定",
+"casecategory": "电子数据鉴定",
+"caseBrief": "为查明员工是否通过USB泄漏商业机密,对电脑数据进行检查。",
+"identificationProcess": [
+"对检材进行编号和拍照",
+"制作镜像并检验完整性",
+"通过仿真检查已打开文件",
+"提取指定时间内文件并导出",
+"检查访问记录并导出",
+"分析记录生成操作列表"
+],
+"analyticalSpecifications": "分析电脑数据还原情况",
+"identificationOpinion": "给出提取和检查结果",
+"Appendices": "不涉及",
+"courtTestimony": "不涉及",
+"AdmissibilityOfOpinions": "不涉及"
+}
+
+case23:
+{
+"title":"司法鉴定科学研究院对行车记录仪录像的电子数据鉴定和声像资料鉴定案",
+"casecategory":"电子数据鉴定与声像资料鉴定",
+"caseBrief":"某地交警处理一起交通事故时,发现肇事车辆行车记录仪录像中事发时的关键录像缺失,委托本院鉴定缺失原因。",
+"identificationProcess":[
+"对检材和存储卡进行编号和拍照",
+"制作存储卡镜像并计算哈希值",
+"使用软件在镜像中检查录像文件",
+"提取事发时间内7个录像文件记录时间",
+"使用播放软件查看单个和相邻录像时间"
+],
+"analyticalSpecifications":"分析存储卡结构和7个录像时间不连续现象",
+"identificationOpinion":[
+"7个录像单个画面时间连续,但间隔时间不连续",
+"对应的录像文件物理存储连续,其他时间也存在类似现象",
+"时间不连续应为录像设备缺陷所致"
+],
+"Appendices":"不涉及",
+"courtTestimony":"不涉及",
+"AdmissibilityOfOpinions":"不涉及"
+}
+
+case24:
+{
+"title":"司法鉴定科学研究院对某公司商业机密案件的电子数据与声像资料鉴定",
+"casecategory":"电子数据鉴定与声像资料鉴定",
+"caseBrief":"甲公司发现原职员某乙离职后在竞业公司工作,并怀疑其在离职前未经授权访问商业机密资料,委托本院进行检查。",
+"identificationProcess":[
+"对送检电脑进行编号和拍照",
+"制作硬盘镜像并计算哈希值",
+"通过系统仿真检查已打开文档",
+"提取并确认可疑文档",
+"检查操作记录并进行数据过滤",
+"分析生成数据库访问与文件操作列表"
+],
+"analyticalSpecifications":"综合分析电脑数据中的文件访问、操作记录表明侵权情况",
+"identificationOpinion":[
+"检出被检查人曾访问多篇商业计划书与报告",
+"根据时间记录划分出用于外传与个人备份的文档",
+"检出USB存储设备曾被连接电脑进行文件传输"
+],
+"Appendices":"不涉及",
+"courtTestimony":[
+"接到出庭通知书并与法院确认事宜",
+"准备工作并在法庭回答各方质询"
+],
+"AdmissibilityOfOpinions":"不涉及"
+}
+
+case25:
+{
+"title":"司法鉴定中心对某公司客户端程序与其疑似仿品之间相似性进行电子数据鉴定案",
+"casecategory":"电子数据鉴定",
+"caseBrief":"某游戏公司发现其游戏客户端程序存在疑似仿品,委托本中心对两者进行检查和比对。",
+"identificationProcess":[
+"取得两款客户端程序apk文件",
+"对文件进行解包并提取指定脚本文件",
+"使用软件对提取文件进行内容比对" ,
+"统计不同相似度范围内的文件数目"
+],
+"analyticalSpecifications":"对比对文件进行内容相似程度分析",
+"identificationOpinion":[
+"提取文件中完全相同的文件有60个",
+"内容相似度在90%-100%的文件有76个",
+"内容相似度在70%-90%的文件有9个",
+"内容相似度低于70%的文件有2个"
+],
+"Appendices":"比对结果汇总表",
+"courtTestimony":"不涉及",
+"AdmissibilityOfOpinions":"不涉及"
+}
+
+
+case26:
+{
+"title":"国家信息中心电子数据司法鉴定中心对传播“熊猫烧香”网络病毒犯罪嫌疑人计算机硬盘进行电子数据司法鉴定案",
+"casecategory":"电子数据鉴定",
+"caseBrief":"2007年“熊猫烧香”病毒在网络上暴发,受理机关委托本中心对嫌疑人计算机进行检查定位病毒制作过程。",
+"identificationProcess":[
+"重要提取了制作、传播病毒的证据",
+"提取了病毒文件与开发记录样本及工具",
+"对检材和网络数据进行分析"
+],
+"analyticalSpecifications":"实验室团队以只读、克隆和校验技术获得数据并进行分析",
+"identificationOpinion":[
+"各类病毒文件与开发记录被提取",
+"病毒样本及传播时间节点被审计",
+"病毒使用的编程语言被鉴定"
+],
+"Appendices":"不涉及",
+"courtTestimony":"不涉及",
+"AdmissibilityOfOpinions":"不涉及"
+}
+
+case27:
+{
+"title":"上海辰星电子数据司法鉴定中心对某某公司涉嫌非法获取、对外泄露公民个人信息进行电子数据鉴定案",
+"casecategory":"电子数据鉴定",
+"caseBrief":"2011年,某某市公安局侦破特大信用卡诈骗案件后,从中发现并掌握了犯罪嫌疑人通过互联网大量购买公民个人信息用于信用卡诈骗的关键线索。通过细致的梳理和认真的排查,侦查员发现某某公司有非法获取、对外泄露公民个人信息的重大嫌疑。",
+"identificationProcess":[
+"2012年3月16日,上海辰星电子数据司法鉴定中心在接到某某公安分局委托后,立即组织鉴定人员对所有送检材料进行了检验分析。",
+"2012年3月17日,在某某经侦支队的配合下,上海辰星电子数据司法鉴定中心的鉴定人员前往某某公司的数据部,对该公司的其他涉案服务器进行了封存,其中包括了包含重要涉案数据的内部员工共享文件服务器,存储个人电子邮件信息的服务器以及公司内部电子邮件服务器。"
+],
+"analyticalSpecifications":"鉴定中心依据中华人民共和国公共安全行业标准GA/T 756-2008《数字化设备证据数据发现提取固定方法》和GA/T826-2009《电子物证数据恢复检验技术规范》对涉案服务器进行检验的过程中发现,涉案服务器中的架构为RAID5,涉案服务器中硬盘基本为SAS接口。考虑到RAID5技术的特殊性,鉴定中心紧急拨款6万余元,购置了与服务器中硬盘同一型号同一批次的硬盘,使用了符合GA/T 754-2008要求的电子数据存储介质复制工具对涉案服务器中的硬盘进行了复制,验证了两者的校验码的一致性后,对复制的硬盘中的数据进行了检验。",
+"identificationOpinion":"经检验,服务器的操作系统均为“RXXXServer”,数据库均为“OXXXXXX”,数据库中包含了涉案的个人信息数据。其中,个人信息库记录数高达1.8亿条,个人消费库记录数高达8千8百万条,车辆信息库记录数高达2千万条,儿童信息库记录数条6百万条,结婚信息库记录数条38万条,楼盘信息库记录数条8万条。",
+"Appendices":"不涉及",
+"courtTestimony":"不涉及",
+"AdmissibilityOfOpinions":"不涉及"
+}
+
+case28:
+{
+"title":"四川效率源电子数据司法鉴定所对《列王的纷争》游戏外挂软件的电子数据司法鉴定案",
+"casecategory":"电子数据鉴定",
+"caseBrief":"XX县公安局网安大队接到北京智明星通科技股份有限公司报案称,有人利用技术手段自写程序实现自动注册大量玩家账号,通过“外挂”操作大量账号实现自动获取游戏资源,然后进行交易,给游戏公司造成重大经济损失。通过对嫌疑人使用的电脑进行电子物证检查,提取到嫌疑人在实施犯罪过程中使用的程序源代码。由委托方提供的北京智明星通科技股份有限公司“关于《列王的纷争》网络游戏域名的情况说明”如下图所示:",
+"identificationProcess":[
+"技术规范1.GBT 29360-2012 电子物证数据恢复检验规程;2.GBT 29362-2012 电子物证数据搜索检验规程。",
+"鉴定工具设备:鉴定工作站(ED-SP9600)软件:WinHex V18.3(以下简称WinHex)、易语言 V5.6。",
+"鉴定步骤1.检材编号 2.准备鉴定环境 3.固定数据 4.检材文件分析"
+],
+"analyticalSpecifications":"检验应用程序功能属于修改游戏应用,导致源系统运行游戏程序不稳定,非法控制目标计算机",
+"identificationOpinion":"针对委托人提出的委托事项“该alpha.vmp.exe应用程序具有,显示武器、显示配件、显示防具、显示药品、显示盒子等功能”,文件程序功能性鉴定",
+"Appendices":"不涉及",
+"courtTestimony":"不涉及",
+"AdmissibilityOfOpinions":"不涉及"
+}
+
+case29:
+{
+"title":"四川效率源电子数据司法鉴定所对成都市某局委托的伪基站司法鉴定",
+"casecategory":"电子数据鉴定",
+"caseBrief":"2017年4月26日16时许,犯罪嫌疑人詹某窜至成都市成华区某处,通过其电动自行车上安装的疑似通信设备向不特定群众发送代开发票的短信。经审讯犯罪嫌疑人詹某对破坏公用电信设施的犯罪行为供认不讳。",
+"identificationProcess":[
+"(一)技术规范 1.GA/T 756-2008数字化设备证据数据发现提取固定方法 2.GB/T 29362-2012电子物证数据搜索检验规程 3.GB/T 29360-2012电子物证数据恢复检验规程",
+"(二)鉴定工具 设备:鉴定工作站(ED-SP9600)软件:效率源仿真系统V1.0、效率源伪基站数据分析工具V2.4.0.4、R-STUDIO V7.2.154997(以下简称R-STUDIO)、WinHex V18.3(以下简称WinHex)、Navicat Premium V11.2.7(以下简称Navicat)",
+"(三)鉴定步骤 1.检材编号 2.准备鉴定环境 3.数据固定保全 4.搜索伪基站软件 5.确定系统时间设置 6.分析筛查伪基站数据 7.提取伪基站数据文件 8.分析统计IMSI数据 9.提取全盘的伪基站群发短信内容数据"
+],
+"analyticalSpecifications":""(一)检材数据的时间属性 (二)伪基站软件 (三)伪基站mysql数据库 (四)伪基站短信发送记录 (五)包含IMSI码的txt文档 (六)综合解析伪基站短信发送记录 (七)伪基站群发短信内容",
+"identificationOpinion":"综合解析得到伪基站涉案数据的完整结果。本案中,2017年1月1日至2017年4月26日时间段内,检材硬盘中伪基站短信发送对象的IMSI码总数可认定为:201724 个。",
+"Appendices":"不涉及",
+"courtTestimony":"不涉及",
+"AdmissibilityOfOpinions":"不涉及"
+}
+
+case30:
+{
+"title": "四川效率源电子数据司法鉴定所对监控录像机及视频数据的电子数据司法鉴定案",
+"casecategory": "电子数据鉴定",
+"casebrief": "2017年9月18日10时至11时30分,作为学校老师的李XX打了一名学生,之后该名学生跳楼自杀,李XX的同事王XX在事发后帮助李XX毁灭其打学生的监控录像证据。公安机关委托本鉴定机构恢复送检监控录像机中涉案视频文件,提取监控设备操作痕迹记录,检测该监控设备中的硬盘是否为原始硬盘。",
+"identificationProcess": ["(1)使用工具:电子数据取证工作站、Firefox浏览器、Hash、取证大师软件、云勘大师等",
+"(2)对提供的服务器信息如IP、用户名、密码等进行连接,成功连接后制作镜像",
+"(3)加载镜像文件,使用取证软件分析镜像中的用户痕迹和文件",
+"(4)提取文件,对比分析用户文件操作痕迹",
+"(5)加载终端记录,通过记录分析服务器安装和配置了squid代理软件",
+"(6)搜索日志文件,在日志中发现服务器查询过境外网站如google、facebook等IP信息"],
+"identificationOpinion": "1.未发现案发时间段的监控视频数据;2.提取到2017年9月8日至2017年11月8日监控录像机系统日志记录209条,其中包括2017-09-18 22:17:51对硬盘进行格式化操作的记录;3.检材硬盘不是检材监控录像机案发时使用的原始硬盘。",
+"analyticalSpecifications": "(1)硬盘的监控视频文件分析(2)硬盘中非监控视频数据分析(3)监控机的系统日志分析(4)综合分析",
+"appendices": "不涉及",
+"courtTestimony": "不涉及",
+"admissibilityOfOpinions": "不涉及"
+}
+
